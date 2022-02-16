@@ -192,6 +192,10 @@ extension RelatedDB.RDatabase {
   public func count(_ table: Swift.String, _ condition: Swift.String, _ arguments: [Any]) -> Swift.Int
   public func count(_ table: Swift.String, _ condition: Swift.String, _ arguments: [Swift.String : Any]) -> Swift.Int
 }
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class RDLogger : ObjectiveC.NSObject {
+  public class func key(_ value: Swift.String?)
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class RDDate : ObjectiveC.NSObject {
   public class func custom(_ formatter: Foundation.DateFormatter)
   @objc deinit

@@ -236,6 +236,15 @@ SWIFT_CLASS("_TtC9RelatedDB7RDDebug")
 
 
 
+
+SWIFT_CLASS("_TtC9RelatedDB8RDLogger")
+@interface RDLogger : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+
 @class NSString;
 
 SWIFT_PROTOCOL("_TtP9RelatedDB8RDObject_")
