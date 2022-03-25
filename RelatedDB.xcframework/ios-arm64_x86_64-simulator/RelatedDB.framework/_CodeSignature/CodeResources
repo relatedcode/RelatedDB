@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/RelatedDB-Swift.h</key>
 		<data>
-		d1aPZ9Iy3KyxLtvqeOrv7DP6ayA=
+		X7trhVJyYmFn/2JUTq7kdogcq2c=
 		</data>
 		<key>Headers/RelatedDB.h</key>
 		<data>
@@ -14,55 +14,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		P2/teh7qfskPXT6TnrLBCuZD9B8=
+		HP9CDl8eiMroKwmFSfi9CY7AmV4=
 		</data>
 		<key>Modules/RelatedDB.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		LwUDzleXj/uHibLohQeyCvQuarA=
+		NCquzKWBRCvp3wuSgR92btlEv7o=
 		</data>
 		<key>Modules/RelatedDB.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		NuTkLAw0aIQM76hpPVHuHLURxd4=
+		8+qWSLg9FweSn7ksIZyUspPiQzo=
 		</data>
 		<key>Modules/RelatedDB.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		4LYTG5+4rsyPxKnd32TyAn+lPoI=
-		</data>
-		<key>Modules/RelatedDB.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		LwUDzleXj/uHibLohQeyCvQuarA=
-		</data>
-		<key>Modules/RelatedDB.swiftmodule/arm64.swiftinterface</key>
-		<data>
-		NuTkLAw0aIQM76hpPVHuHLURxd4=
-		</data>
-		<key>Modules/RelatedDB.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		4LYTG5+4rsyPxKnd32TyAn+lPoI=
+		oxn5Ah5ysjl500YpFJijFi2srfQ=
 		</data>
 		<key>Modules/RelatedDB.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		pI/SYx7hOTq9RXDYJn2M+0zx9GA=
+		4USfjAD3YJ1cvIa6ECRxftIPK2A=
 		</data>
 		<key>Modules/RelatedDB.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		h4MvnCMNIgObb8e+Rw6AOhjWiPo=
+		cFzBJQDmQr0hYqIX4PJFRRw93O0=
 		</data>
 		<key>Modules/RelatedDB.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		KkHtbIGdrsFyM7xeyELAKbY8h68=
-		</data>
-		<key>Modules/RelatedDB.swiftmodule/x86_64.swiftdoc</key>
-		<data>
-		pI/SYx7hOTq9RXDYJn2M+0zx9GA=
-		</data>
-		<key>Modules/RelatedDB.swiftmodule/x86_64.swiftinterface</key>
-		<data>
-		h4MvnCMNIgObb8e+Rw6AOhjWiPo=
-		</data>
-		<key>Modules/RelatedDB.swiftmodule/x86_64.swiftmodule</key>
-		<data>
-		KkHtbIGdrsFyM7xeyELAKbY8h68=
+		+5IowZ65QPJ7pGA6GeNgroqIKUY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -75,7 +51,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/ydQ+u5BKziLgcTMUWJWbg/ZuGXxJhqHfkbvyxUT1K8=
+			CfJGHGRuDwlyK3SjFxIMBRyF4iZ1c7+69MwMxBkDY+0=
 			</data>
 		</dict>
 		<key>Headers/RelatedDB.h</key>
@@ -89,84 +65,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7GGsks2JMHF69djvwmuAfe+tj9VjsAQc4vInG13BSBw=
+			xbIvFVB/TypFgy9Wc9pf19fqNoHC4Wb9rzGIFsxoGao=
 			</data>
 		</dict>
 		<key>Modules/RelatedDB.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			D7e+Ro4JqW6FL0/sjwkUEgHqF+GbxoZvFH0QOe0rlFo=
+			38KDMc1Gppw3vOellY88fYzOS+jnSC3Z/rzg36YMkMw=
 			</data>
 		</dict>
 		<key>Modules/RelatedDB.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0ZyjGufLlh+QA2p9kNz5WYicmFEZ5rHDOPCyXkJgQCs=
-			</data>
-		</dict>
-		<key>Modules/RelatedDB.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			7GGsks2JMHF69djvwmuAfe+tj9VjsAQc4vInG13BSBw=
-			</data>
-		</dict>
-		<key>Modules/RelatedDB.swiftmodule/arm64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			D7e+Ro4JqW6FL0/sjwkUEgHqF+GbxoZvFH0QOe0rlFo=
-			</data>
-		</dict>
-		<key>Modules/RelatedDB.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			0ZyjGufLlh+QA2p9kNz5WYicmFEZ5rHDOPCyXkJgQCs=
+			64u3NnskMWb7G2BIxBc0XTqN2Mt9y7xnHP5C/BZHFLg=
 			</data>
 		</dict>
 		<key>Modules/RelatedDB.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fejQWfG9+N+kuQ31jN1KbFyeeWcxl4JJ7eK6x0f41IE=
+			8Jd40hyC3KmKjFG/A5qp1Eop5Vs+KowgnfsJYWnjHQ0=
 			</data>
 		</dict>
 		<key>Modules/RelatedDB.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9R1f7W4dSfl3x4fGj4b+XgPtaxdcoc8fy2QXRoPc2tk=
+			4Pn+aFB6caCzMo66aGlczeg/gQ0p4c6Zd00V27WytNI=
 			</data>
 		</dict>
 		<key>Modules/RelatedDB.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FCV2rJaS5+IgQ6koPXONz6tCcqoY3dKqLYrBIxk4UZ0=
-			</data>
-		</dict>
-		<key>Modules/RelatedDB.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			fejQWfG9+N+kuQ31jN1KbFyeeWcxl4JJ7eK6x0f41IE=
-			</data>
-		</dict>
-		<key>Modules/RelatedDB.swiftmodule/x86_64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			9R1f7W4dSfl3x4fGj4b+XgPtaxdcoc8fy2QXRoPc2tk=
-			</data>
-		</dict>
-		<key>Modules/RelatedDB.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			FCV2rJaS5+IgQ6koPXONz6tCcqoY3dKqLYrBIxk4UZ0=
+			XR6O8I4slYVtD8jYvGW2SSR5FGV+okhJDjtmmXrf3Qo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
