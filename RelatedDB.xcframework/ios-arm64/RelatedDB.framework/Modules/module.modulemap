@@ -6,6 +6,6 @@ framework module RelatedDB {
 }
 
 module RelatedDB.Swift {
-    header "RelatedDB-Swift.h"
-    requires objc
+  header "RelatedDB-Swift.h"
+  requires objc
 }

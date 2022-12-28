@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/RelatedDB-Swift.h</key>
 		<data>
-		PQ5U79MrXxamiROxbN8BoRqfz54=
+		wDMht7XzEsT/Goe2Ebd3ikgWpPI=
 		</data>
 		<key>Headers/RelatedDB.h</key>
 		<data>
@@ -14,35 +14,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/q8mYxr7V3XX0xsqhlshKohacow=
+		F9NCuX1aG1/HBp+B9cB3c39MMEM=
+		</data>
+		<key>Modules/RelatedDB.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		tYhqQmG5N+43eBRvXNUUsfG+mb4=
+		</data>
+		<key>Modules/RelatedDB.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		aOAV/IZ1ZEyo4nS29TpQiERfDnI=
 		</data>
 		<key>Modules/RelatedDB.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		rM0aZQVtWkswyK9RzKH+LZ/PEQI=
+		Kj00HblQigkWTaCro+2qGGqYEAg=
 		</data>
 		<key>Modules/RelatedDB.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		3yJSYTEvCz+1Yuf7LwnH8wdj8qU=
+		aOAV/IZ1ZEyo4nS29TpQiERfDnI=
 		</data>
 		<key>Modules/RelatedDB.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		re2iRNOHhgUY6dxsVlgUowUrrzU=
+		LlDaIjNx+Uq/mIHQAVgkWm6Fo6o=
+		</data>
+		<key>Modules/RelatedDB.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		tYhqQmG5N+43eBRvXNUUsfG+mb4=
+		</data>
+		<key>Modules/RelatedDB.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		60wVyDReGP+PIJbq5jb/VLhzXlM=
 		</data>
 		<key>Modules/RelatedDB.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		7mp0sdZu+MSKMOTTiy7Ufhj5Z2A=
+		MRAil8Kd/lyuGQdhyE3V+sduRKY=
 		</data>
 		<key>Modules/RelatedDB.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		QrKDtrMdopHZQk/HhZXtsmW1RSQ=
+		60wVyDReGP+PIJbq5jb/VLhzXlM=
 		</data>
 		<key>Modules/RelatedDB.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		DaHR0T2hMuy4FQhInvKathGeUlI=
+		YOEtGC7UvaOgEFgcE3xwXe9tPtU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		fLDEquTCyYBYy+6fGG2MFUYEXNE=
+		okkBYof/mk1tXoCkzu5p+dE3AVE=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -51,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rQ0c5W+hmmb11C7HD9i69EWtGODiNgwRSxVf6NblH08=
+			rLKZhLb9xjNgDiht3AswOICwE0Bb0Ol4pHBfEjPpR5w=
 			</data>
 		</dict>
 		<key>Headers/RelatedDB.h</key>
@@ -61,53 +77,81 @@
 			P3nk2N+DUvpSyCzlHlvXYIojVQY5BQfsaMxZjitUUbg=
 			</data>
 		</dict>
+		<key>Modules/RelatedDB.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Olv1mDD/aRebihs80K6hIIKC4fe4Xan+3fgoLEJZ91g=
+			</data>
+		</dict>
+		<key>Modules/RelatedDB.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2XvtNEJ2ppa/J9Hi7IgxcORK2DqiEtEYRKCLVSkkf3o=
+			</data>
+		</dict>
 		<key>Modules/RelatedDB.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pbVtnphADWeBNHvhLWv0KCfhi+Bq+7K+qD32RKbrZTw=
+			YqCrUt/9JfvPffsBBCQR2Ay6QnItoVYFmMzbShd8uZY=
 			</data>
 		</dict>
 		<key>Modules/RelatedDB.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ELc2zKMdLLBKwDZngVRj6vPNsr01Jt45sxrjs/CuNIs=
+			2XvtNEJ2ppa/J9Hi7IgxcORK2DqiEtEYRKCLVSkkf3o=
 			</data>
 		</dict>
 		<key>Modules/RelatedDB.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oxbND2mCbut5Bfr8+0IafBQhViMB2wPhdDPduZwrQ8A=
+			QhGvOUwHrMTWZzh4oL1zmrJQNKvUMX1tt4CMBQ/4Zbc=
+			</data>
+		</dict>
+		<key>Modules/RelatedDB.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Olv1mDD/aRebihs80K6hIIKC4fe4Xan+3fgoLEJZ91g=
+			</data>
+		</dict>
+		<key>Modules/RelatedDB.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yXwTaq+9KTqsjcWgRs9ipMKP5jxJ7e7HS0aZHUczr8M=
 			</data>
 		</dict>
 		<key>Modules/RelatedDB.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pHjYRzVyPuXsrZoeU2xT0Cl54LvJR5aRZchvy2CGpEk=
+			LsP8LzUFE1J7m/jx5RiaVwYu0BHC/YZiCFvHbE8R96U=
 			</data>
 		</dict>
 		<key>Modules/RelatedDB.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RzLssX/wPSPLQy+ptB9yNII0vkBQR47cSKeZcnJHmVc=
+			yXwTaq+9KTqsjcWgRs9ipMKP5jxJ7e7HS0aZHUczr8M=
 			</data>
 		</dict>
 		<key>Modules/RelatedDB.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6Z/EOLQXrd2SfuxNlNcYXzIdIqgdIc/EgyFfH4vOLYY=
+			APgjdjHKURObOim4YR28aQ7UVql+lb9VRKnOrVyEolI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UbDre0Dqa9IKHCwJwq7nbdj6/iy68zj77mp6y4SSvLU=
+			XH1Y1MmsrgMfA1IGjcYkuc4NtgzMScNcx2oDfu2wCvE=
 			</data>
 		</dict>
 	</dict>
