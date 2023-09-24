@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'RelatedDB'
-  s.version = '1.1.4'
+  s.version = '1.1.5'
   s.license = 'MIT'
 
   s.summary = 'RelatedDB is a lightweight Swift wrapper around SQLite.'

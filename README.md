@@ -12,11 +12,27 @@ RelatedDB is a lightweight Swift wrapper around [SQLite](https://sqlite.org/faq.
 
 ### CocoaPods
 
-To use RelatedDB with [CocoaPods](https://cocoapods.org) specify in your `Podfile`:
+[CocoaPods](https://cocoapods.org) is a dependency manager for Swift and Objective-C Cocoa projects.
 
-```sh
+To incorporate the **RelatedDB** library into your Xcode project utilizing CocoaPods, please reference it within your `Podfile` as shown below:
+
+```ruby
 pod 'RelatedDB'
 ```
+
+### Swift Package Manager
+
+[Swift Package Manager](https://swift.org/package-manager) is a tool for managing the distribution of Swift code.
+
+Once you've configured your `Package.swift` manifest file, you may proceed to include **RelatedDB** in the dependencies section of the same file.
+
+```swift
+dependencies: [ .package(url: "https://github.com/relatedcode/RelatedDB.git", from: "1.1.5") ]
+```
+
+### Manually
+
+If you prefer not to use any of the dependency managers, you can integrate **RelatedDB** into your project manually. Just copy all the `*.swift` files from the `RelatedDB/Sources` folder into your Xcode project.
 
 ## Usage
 
