@@ -17,7 +17,7 @@ let package = Package(
             name: "RelatedDB",
             dependencies: [],
             path: "./RelatedDB",
-            sources: ["Sources"]
+            sources: ["Sources/Core", "Sources/Tools"]
         ),
     ]
 )
