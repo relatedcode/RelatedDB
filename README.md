@@ -27,7 +27,7 @@ pod 'RelatedDB'
 Once you've configured your `Package.swift` manifest file, you may proceed to include **RelatedDB** in the dependencies section of the same file.
 
 ```swift
-dependencies: [ .package(url: "https://github.com/relatedcode/RelatedDB.git", from: "1.1.5") ]
+dependencies: [ .package(url: "https://github.com/relatedcode/RelatedDB.git", from: "1.1.7") ]
 ```
 
 ### Manually
