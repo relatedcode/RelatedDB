@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2023 Related Code - https://relatedcode.com
+// Copyright (c) 2025 Related Code - https://relatedcode.com
 //
 // THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -132,10 +132,8 @@ extension RDatabase {
 	//-------------------------------------------------------------------------------------------------------------------------------------------
 	public func cleanupDatabase() {
 
-		queueAsync {
-			self.dropTables()
-			self.createTables()
-		}
+		dropTables()
+		createTables()
 	}
 
 	//-------------------------------------------------------------------------------------------------------------------------------------------
@@ -143,9 +141,7 @@ extension RDatabase {
 
 		for result in RDRuntime.classes(conformToProtocol: RDObject.self) {
 			if let otype = result as? RDObject.Type {
-				let schema = RDSchemas[otype]
-				let sql = schema.createTable()
-				RDExecute(handle, sql)?.execute()
+				createTable(otype)
 			}
 		}
 	}
@@ -155,10 +151,29 @@ extension RDatabase {
 
 		for result in RDRuntime.classes(conformToProtocol: RDObject.self) {
 			if let otype = result as? RDObject.Type {
-				let schema = RDSchemas[otype]
-				let sql = schema.dropTable()
-				RDExecute(handle, sql)?.execute()
+				dropTable(otype)
 			}
+		}
+	}
+
+	// MARK: -
+	//-------------------------------------------------------------------------------------------------------------------------------------------
+	private func createTable(_ otype: RDObject.Type) {
+
+		queueAsync {
+			let schema = RDSchemas[otype]
+			let sql = schema.createTable()
+			RDExecute(self.handle, sql)?.execute()
+		}
+	}
+
+	//-------------------------------------------------------------------------------------------------------------------------------------------
+	private func dropTable(_ otype: RDObject.Type) {
+
+		queueAsync {
+			let schema = RDSchemas[otype]
+			let sql = schema.dropTable()
+			RDExecute(self.handle, sql)?.execute()
 		}
 	}
 
