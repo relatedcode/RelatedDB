@@ -14,7 +14,7 @@ RelatedDB is a lightweight Swift wrapper around [SQLite](https://sqlite.org/faq.
 
 [CocoaPods](https://cocoapods.org) is a dependency manager for Swift and Objective-C Cocoa projects.
 
-To incorporate the **RelatedDB** library into your Xcode project utilizing CocoaPods, please reference it within your `Podfile` as shown below:
+To incorporate the **RelatedDB** library into your Xcode project using CocoaPods, add it to your `Podfile` as shown below:
 
 ```ruby
 pod 'RelatedDB'
@@ -24,7 +24,7 @@ pod 'RelatedDB'
 
 [Swift Package Manager](https://swift.org/package-manager) is a tool for managing the distribution of Swift code.
 
-Once you've configured your `Package.swift` manifest file, you may proceed to include **RelatedDB** in the dependencies section of the same file.
+To add **RelatedDB** using Swift Package Manager, include it in the dependencies section of your `Package.swift` file:
 
 ```swift
 dependencies: [ .package(url: "https://github.com/relatedcode/RelatedDB.git", from: "1.1.8") ]
@@ -44,7 +44,7 @@ import RelatedDB
 let db = RDatabase()
 ```
 
-You can also specify the database filename or the complete path. The default filename `database.sqlite`, and the default path is `Library/Application Support`.
+You can also specify the database filename or the complete path. The default filename is `database.sqlite`, and the default path is `Library/Application Support`.
 
 ```swift
 let db = RDatabase(file: "db.sqlite")
@@ -54,9 +54,9 @@ let db = RDatabase(file: "db.sqlite")
 let db = RDatabase(path: "yourpath/db.sqlite")
 ```
 
-### Define Object
+### Define an Object
 
-RelatedDB provides a protocol that helps to manipulate database rows as regular objects.
+RelatedDB provides a protocol that allows you to manipulate database rows as regular objects.
 
 ```swift
 class User: NSObject, RDObject {
@@ -194,7 +194,7 @@ Although managing the database rows as objects is an easy and elegant way, you m
 
 **Insert** *(using Dictionary)*
 
-Insert a new object as Disctionary:
+Insert a new object as Dictionary:
 
 ```swift
 let values: [String: Any] = ["userId": 1001, "name": "John Smith", "age": 42, "approved": false]
@@ -240,7 +240,7 @@ In the cases above, the result types will be a `[[String: Any]]`.
 
 **Convert Object** *(to Dictionary)*
 
-Convert an existing object to Dictionary:
+Convert an existing object to a Dictionary:
 
 ```swift
 let values = user.values()
@@ -302,15 +302,15 @@ You can check whether an object exists or not (by specifying the primary key val
 
 ```swift
 if (User.check(db, key: 1001)) {
-  // do something	
+  // do something 
 }
 ```
 
-Or you check whether a set of objects exist or not (by specifying a condition).
+Or you can check whether a set of objects exist or not (by specifying a condition).
 
 ```swift
 if (User.check(db, "age >= ? AND age <= ?", [30, 35])) {
-  // do something	
+  // do something 
 }
 ```
 
@@ -318,7 +318,7 @@ if (User.check(db, "age >= ? AND age <= ?", [30, 35])) {
 
 For refreshing the user interface upon database changes, you can use the Database Observers.
 
-Checking all the possible changes for the User class would be:
+To observe all possible changes for the User class:
 
 ```swift
 let types: [RDObserverType] = [.insert, .update, .delete]
@@ -328,7 +328,7 @@ let observerId = User.createObserver(db, types) { method, objectId in
 }
 ```
 
-However you can narrow down the number of changes by using a condition:
+However, you can narrow down the number of changes by using a condition:
 
 ```swift
 let observerId = User.createObserver(db, types, "OBJ.age > 40") { method, objectId in
@@ -338,7 +338,7 @@ let observerId = User.createObserver(db, types, "OBJ.age > 40") { method, object
 
 Also you can check only specific database changes (separated or combined) by using the following Observer types: `.insert`, `.update`, `.delete`.
 
-To get notified about new users, but not the updated and/or deletes ones:
+To get notified about new users, but not updated and/or deleted ones:
 
 ```swift
 let observerId = User.createObserver(db, .insert) { method, objectId in
@@ -346,7 +346,7 @@ let observerId = User.createObserver(db, .insert) { method, objectId in
 }
 ```
 
-Or to get notified about deleted users dedicated would look like this:
+Or to get notified about deleted users only:
 
 ```swift
 let observerId = User.createObserver(db, .delete) { method, objectId in
@@ -356,7 +356,7 @@ let observerId = User.createObserver(db, .delete) { method, objectId in
 
 ### Remove Observer
 
-Once a Database Observer no longer required, you can remove it by using:
+Once a Database Observer is no longer required, you can remove it by using:
 
 ```swift
 User.removeObserver(db, observerId)
@@ -364,7 +364,7 @@ User.removeObserver(db, observerId)
 
 ### Execute Plain SQL
 
-If you would ever need it, you can execute plain SQL commands.
+If needed, you can execute plain SQL commands.
 
 ```swift
 db.execute("DELETE FROM User WHERE age = 42;")
@@ -384,7 +384,7 @@ In these cases, the `User` class also needs to be defined first.
 
 ### Cleanup Database
 
-If you would ever need, all the tables can be destroyed and recreated by using:
+If needed, all tables can be destroyed and recreated using:
 
 ```swift
 db.cleanupDatabase()
