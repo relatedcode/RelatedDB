@@ -1,6 +1,6 @@
 ## What is this?
 
-RelatedDB is a lightweight Swift wrapper around [SQLite](https://sqlite.org/faq.html).
+RelatedDB is a lightweight Swift wrapper for [SQLite](https://sqlite.org/faq.html) that simplifies database operations in iOS applications.
 
 ## Requirements
 
@@ -14,7 +14,7 @@ RelatedDB is a lightweight Swift wrapper around [SQLite](https://sqlite.org/faq.
 
 [CocoaPods](https://cocoapods.org) is a dependency manager for Swift and Objective-C Cocoa projects.
 
-To incorporate the **RelatedDB** library into your Xcode project using CocoaPods, add it to your `Podfile` as shown below:
+To integrate **RelatedDB** into your Xcode project using CocoaPods, add the following line to your `Podfile`:
 
 ```ruby
 pod 'RelatedDB'
@@ -44,7 +44,8 @@ import RelatedDB
 let db = RDatabase()
 ```
 
-You can also specify the database filename or the complete path. The default filename is `database.sqlite`, and the default path is `Library/Application Support`.
+You can also specify a custom database filename or the complete file path. The default filename is `database.sqlite`, and the default directory is `Library/Application Support`.
+
 
 ```swift
 let db = RDatabase(file: "db.sqlite")
@@ -72,7 +73,7 @@ class User: NSObject, RDObject {
 }
 ```
 
-By creating the User class above, RelatedDB will automatically create the following SQLite Table for you:
+Based on the User class definition above, RelatedDB will automatically create the following SQLite table:
 
 ```sql
 CREATE TABLE IF NOT EXISTS User (userId INTEGER PRIMARY KEY NOT NULL, name TEXT, age INTEGER, approved INTEGER);
@@ -107,7 +108,7 @@ user.update(db)
 
 ### Insert vs. Update
 
-If you are not 100% sure if an object already exists in the database or not, then you can use the following methods as well:
+If you're unsure whether an object already exists in the database, you can use the following methods:
 
 ```swift
 user.insertUpdate(db)
@@ -161,9 +162,9 @@ let users = User.fetchAll(db, "age > 40", limit: 5, offset: 10)
 
 ### Serial Execution, Thread Safety
 
-The database write actions are serialized. This means, the Insert, Update and Delete actions will be executed one after the other (managed by RelatedDB) automatically.
+Database write operations are serialized, meaning Insert, Update, and Delete actions are executed sequentially (automatically managed by RelatedDB).
 
-The Fetch methods are thread-safe. This means you will have back the results in the same thread you have initiated the request from.
+Fetch methods are thread-safe, ensuring that results are returned on the same thread from which the request was initiated.
 
 > **Note**: You can initiate both read and write actions from any thread you like.
 
@@ -248,7 +249,7 @@ let values = user.values()
 
 **Date Values** (in Dictionary)
 
-When using a values dictionary (to insert or update data), the Date values can be placed into the Dictionary as both `Date` or ISO formatted `String`.
+When using a values dictionary (for inserting or updating data), Date values can be provided as either `Date` objects or ISO-formatted `String` values.
 
 When fetching data (as dictionary), the Date values will always be represented in the Dictionary as ISO formatted `String`.
 
@@ -316,7 +317,7 @@ if (User.check(db, "age >= ? AND age <= ?", [30, 35])) {
 
 ### Create Observer
 
-For refreshing the user interface upon database changes, you can use the Database Observers.
+To refresh the user interface when database changes occur, you can use Database Observers.
 
 To observe all possible changes for the User class:
 
@@ -392,7 +393,7 @@ db.cleanupDatabase()
 
 ### Error Handling
 
-The crucial issues will cause a `fatalError`, every other situation will be reported in the Xcode output window.
+Critical issues will trigger a `fatalError`, while other situations will be logged to the Xcode output window.
 
 You can alter the debug level by using:
 
