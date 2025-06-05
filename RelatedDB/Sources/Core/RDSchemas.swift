@@ -41,8 +41,20 @@ class RDSchemas: NSObject {
 			return schema
 		}
 
-		let schema = RDSchema(otype)
-		shared.schemas[table] = schema
-		return schema
+		fatalError("Trying to fetch a non-existing Schema. \(table)")
+	}
+}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------
+extension RDSchemas {
+
+	//-------------------------------------------------------------------------------------------------------------------------------------------
+	class func create(_ otype: RDObject.Type) {
+
+		let table = otype.table()
+
+		if (shared.schemas[table] == nil) {
+			shared.schemas[table] = RDSchema(otype)
+		}
 	}
 }

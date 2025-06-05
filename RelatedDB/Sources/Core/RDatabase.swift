@@ -125,7 +125,7 @@ extension RDatabase {
 	}
 }
 
-// MARK: - Table Create, Drop methods
+// MARK: - Cleanup methods
 //-----------------------------------------------------------------------------------------------------------------------------------------------
 extension RDatabase {
 
@@ -135,12 +135,18 @@ extension RDatabase {
 		dropTables()
 		createTables()
 	}
+}
+
+// MARK: - Table Create, Drop methods
+//-----------------------------------------------------------------------------------------------------------------------------------------------
+extension RDatabase {
 
 	//-------------------------------------------------------------------------------------------------------------------------------------------
 	private func createTables() {
 
 		for result in RDRuntime.classes(conformToProtocol: RDObject.self) {
 			if let otype = result as? RDObject.Type {
+				RDSchemas.create(otype)
 				createTable(otype)
 			}
 		}
@@ -151,6 +157,7 @@ extension RDatabase {
 
 		for result in RDRuntime.classes(conformToProtocol: RDObject.self) {
 			if let otype = result as? RDObject.Type {
+				RDSchemas.create(otype)
 				dropTable(otype)
 			}
 		}
